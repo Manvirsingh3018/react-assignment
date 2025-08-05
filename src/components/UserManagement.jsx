@@ -39,7 +39,7 @@ const UserManagement = () => {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
   const [open, setOpen] = useState(false);
-  const [sort, setSort] = useState({ key: "id", direction: "asc" });
+  const [sort, setSort] = useState({ key: "", direction: "" });
   const [editing, setEditing] = useState(false);
   const [initialValues, setInitialValues] = useState({
     id: "",
