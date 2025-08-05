@@ -94,7 +94,7 @@ const UserManagement = () => {
   });
 
   const filteredUsers = paginatedUsers.filter((user) =>
-    user.name.toLowerCase().includes(search.toLowerCase())
+    user.name.toLowerCase().includes(search.trim().toLowerCase())
   );
 
   const sortedData = filteredUsers.slice((page - 1) * 5, page * 5);
